@@ -6,3 +6,5 @@ tqdm
 opencv-python
 scikit-learn
 Pillow
+kaggle
+albumentations
