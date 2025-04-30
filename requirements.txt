@@ -7,4 +7,6 @@ opencv-python
 scikit-learn
 Pillow
 kaggle
+torch
+torchvision
 albumentations
