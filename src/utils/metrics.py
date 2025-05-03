@@ -77,3 +77,17 @@ def evaluate_metrics(model, dataloader, device):
         'iou': np.mean(iou_scores),
         'accuracy': np.mean(accuracies)
     }
+
+def dice_coefficient_3d(pred, target, smooth=1e-6):
+    """3D version of Dice coefficient"""
+    pred = torch.sigmoid(pred)
+    pred = (pred > 0.5).float()
+    
+    # Flatten all dimensions except batch
+    pred = pred.reshape(pred.size(0), -1)
+    target = target.reshape(target.size(0), -1)
+    
+    intersection = (pred * target).sum(dim=1)
+    dice = (2. * intersection + smooth) / (pred.sum(dim=1) + target.sum(dim=1) + smooth)
+    
+    return dice.mean().item()
