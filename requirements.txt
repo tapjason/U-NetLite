@@ -6,6 +6,7 @@ tqdm
 opencv-python
 scikit-learn
 Pillow
+jupyter
 kaggle
 torch
 torchvision

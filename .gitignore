@@ -1,4 +1,5 @@
 .ipynb_checkpoints/
 data/
-src/models/__pycache__/
+__pycache__/
+.env
 saved_models/

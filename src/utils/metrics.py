@@ -4,7 +4,7 @@ import numpy as np
 
 def dice_coefficient(pred, target, smooth=1e-6):
     """Calculate Dice coefficient"""
-    pred = torch.sigmoid(pred) > 0.5  # Apply threshold
+    pred = torch.sigmoid(pred) > 0.5
     pred = pred.float()
     
     # Flatten
@@ -17,9 +17,9 @@ def dice_coefficient(pred, target, smooth=1e-6):
     return dice.item()
 
 
-def iou_score(pred, target, smooth=1e-6):
+def iou_coefficient(pred, target, smooth=1e-6):
     """Calculate IoU score (Jaccard index)"""
-    pred = torch.sigmoid(pred) > 0.5  # Apply threshold
+    pred = torch.sigmoid(pred) > 0.5
     pred = pred.float()
     
     # Flatten
@@ -36,7 +36,7 @@ def iou_score(pred, target, smooth=1e-6):
 
 def pixel_accuracy(pred, target):
     """Calculate pixel accuracy"""
-    pred = torch.sigmoid(pred) > 0.5  # Apply threshold
+    pred = torch.sigmoid(pred) > 0.5
     pred = pred.float()
     
     # Flatten
