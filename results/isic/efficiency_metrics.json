@@ -1,0 +1,27 @@
+{
+  "unet_standard": {
+    "params": 31037633,
+    "flops": 54737764352.0,
+    "inference_time": 0.007099361419677735
+  },
+  "unet_with_depthwise": {
+    "params": 5988252,
+    "flops": 14139850752.0,
+    "inference_time": 0.004024953842163086
+  },
+  "unet_with_se_depthwise": {
+    "params": 6206364,
+    "flops": 14156062592.0,
+    "inference_time": 0.005784144401550293
+  },
+  "unet_with_se_depthwise_reduced": {
+    "params": 6097308,
+    "flops": 14155953536.0,
+    "inference_time": 0.005733394622802734
+  },
+  "unet_with_spatial_attn": {
+    "params": 6206756,
+    "flops": 14164592512.0,
+    "inference_time": 0.006326079368591309
+  }
+}

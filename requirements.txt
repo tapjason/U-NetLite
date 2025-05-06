@@ -11,3 +11,4 @@ kaggle
 torch
 torchvision
 albumentations
+thop
