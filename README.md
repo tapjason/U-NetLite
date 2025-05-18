@@ -72,6 +72,7 @@ notebooks/model_evaluation.ipynb
 
 
 ## Project Structure
+```
 U-NetLite/
 ├── notebooks/ # Jupyter notebooks for pipeline stages  
 │ ├── data_extraction.ipynb # Load, preprocess, and save ISIC + BUSI datasets  
@@ -112,3 +113,4 @@ U-NetLite/
 │ │ ├── best_model.pth
 │ │ └── final_model.pth
 ├── results/ # Prediction visualizations and metrics
+```
